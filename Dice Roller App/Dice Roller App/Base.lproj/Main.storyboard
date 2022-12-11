@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d0v-kj-Kpl">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice_Roller_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HD-wallpaper-roulette-betting-casinos-coins-gamble-gambling-games-poker-spin-table-thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="kra-ss-ydL">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice2" translatesAutoresizingMaskIntoConstraints="NO" id="mV3-62-wzS">
+                                <rect key="frame" x="231" y="248" width="135" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cok-OU-mVz">
+                                <rect key="frame" x="104" y="459" width="182" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Roll">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rollButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFb-Qh-nXH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice2" translatesAutoresizingMaskIntoConstraints="NO" id="ScF-G0-2Tt">
+                                <rect key="frame" x="16" y="248" width="135" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kra-ss-ydL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qxf-B6-3SD"/>
+                            <constraint firstItem="kra-ss-ydL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TgV-Ne-YU3"/>
+                            <constraint firstAttribute="bottom" secondItem="kra-ss-ydL" secondAttribute="bottom" id="Weg-l2-dis"/>
+                            <constraint firstItem="kra-ss-ydL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tF2-SS-W6E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="olg-GH-wM8">
+                        <barButtonItem key="rightBarButtonItem" title="info" id="GwN-V0-NtD">
+                            <connections>
+                                <segue destination="Fv4-oB-C6m" kind="show" id="Ckt-lT-1RP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="diceImageView" destination="ScF-G0-2Tt" id="UTM-Am-doL"/>
+                        <outlet property="diceImageView2" destination="mV3-62-wzS" id="b7Y-HQ-7ZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.3846153846152" y="3.5545023696682461"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="W9h-bQ-zv4">
+            <objects>
+                <viewController id="Fv4-oB-C6m" customClass="InfoViewController" customModule="Dice_Roller_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fvv-ar-l2f">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HD-wallpaper-roulette-betting-casinos-coins-gamble-gambling-games-poker-spin-table-thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="hBf-rn-e5v">
+                                <rect key="frame" x="0.0" y="0.0" width="395" height="851"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="p2q-0M-6kn">
+                                <rect key="frame" x="-15" y="156" width="410" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: Abylkhair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ili-6r-X4I">
+                                <rect key="frame" x="102" y="439" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.3360103438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Group: Se-2109" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Lv-JvK">
+                                <rect key="frame" x="102" y="489" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.3360103438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Future swift developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9i-hm-DGZ">
+                                <rect key="frame" x="78" y="539" width="238" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.3360103438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CHI-jj-rpC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hBf-rn-e5v" firstAttribute="leading" secondItem="CHI-jj-rpC" secondAttribute="leading" id="EPs-TS-Pwd"/>
+                            <constraint firstAttribute="bottom" secondItem="hBf-rn-e5v" secondAttribute="bottom" id="PFZ-TJ-24m"/>
+                            <constraint firstItem="hBf-rn-e5v" firstAttribute="top" secondItem="fvv-ar-l2f" secondAttribute="top" id="vPd-6e-khg"/>
+                            <constraint firstItem="hBf-rn-e5v" firstAttribute="trailing" secondItem="CHI-jj-rpC" secondAttribute="trailing" id="ygt-xE-FIy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cj1-cI-nwr"/>
+                    <connections>
+                        <outlet property="aboutLabel" destination="R9i-hm-DGZ" id="DTe-0w-Bvi"/>
+                        <outlet property="groupLabel" destination="DI3-Lv-JvK" id="B8K-Hq-Gmo"/>
+                        <outlet property="nameLabel" destination="ili-6r-X4I" id="UCZ-9p-6YQ"/>
+                        <outlet property="photoImage" destination="p2q-0M-6kn" id="WIv-mG-xPW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9z4-fb-SSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696.9230769230767" y="0.7109004739336493"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nh7-o7-uPa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d0v-kj-Kpl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jfl-V6-dsE">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DrG-Pc-PvT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLF-Zp-l6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.15384615384608" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dice2" width="256" height="256"/>
+        <image name="HD-wallpaper-roulette-betting-casinos-coins-gamble-gambling-games-poker-spin-table-thumbnail" width="338" height="506"/>
+        <image name="photo" width="640" height="640"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
